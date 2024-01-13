@@ -210,38 +210,34 @@ address{
 }
 
 .pro5:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -webkit-box-shadow:rgba(235, 229, 229, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(238, 227, 227, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(237, 231, 231, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(234, 232, 232, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .pro6:hover {
-    -webkit-transform:rotate(-7deg);
-    -moz-transform:rotate(-7deg);
-    -o-transform:rotate(-7deg);
-    box-transform:rotate(-7deg);
+    -webkit-box-shadow:rgba(235, 229, 229, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(238, 227, 227, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(237, 231, 231, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(234, 232, 232, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .pro7:hover {
-    -webkit-transform:rotate(-7deg);
-    -moz-transform:rotate(-7deg);
-    -o-transform:rotate(-7deg);
-    box-transform:rotate(-7deg);
+    -webkit-box-shadow:rgba(235, 229, 229, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(238, 227, 227, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(237, 231, 231, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(234, 232, 232, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .pro8:hover {
-    -webkit-transform:rotate(-7deg);
-    -moz-transform:rotate(-7deg);
-    -o-transform:rotate(-7deg);
-    box-transform:rotate(-7deg);
+    -webkit-box-shadow:rgba(235, 229, 229, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(238, 227, 227, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(237, 231, 231, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(234, 232, 232, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 footer{
     text-align: center;
     border-radius: 0px;
-}
-
-.lightpurple{
-    background-color: rgba(165, 42, 42, 0.638);
 }
