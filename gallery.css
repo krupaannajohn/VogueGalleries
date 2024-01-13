@@ -78,7 +78,7 @@ a{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuMnISGE-NtgqV5bQp8Spr-QZdKxpYvnY01Q&usqp=CAU);
-    animation:fadeIn 5s;
+    animation:fadeIn 8s;
 }
 
 .brown{
