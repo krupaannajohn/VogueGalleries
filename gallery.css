@@ -1,7 +1,5 @@
 .zone{
-    /*display: inline-block;*/  /*we commented this so that all the boxes will come one below the other and not as onle block in a line*/
     padding:30px;
-    /*border-radius:15px;*/
     color: white;
 }
 
@@ -21,11 +19,10 @@ body{
 @media only screen and (max-width:600px){
     .nav-bar{
         font-size: 0.7em;
-        background-color: black;  /*This makes the bg color change when we minimize the screen and it becomes less than 600px*/
+        background-color: black; 
     }
 }
 
-/*This keeps our navbar in one place even when we scroll. This has been put with the nav class*/
 .sticky{
     position: fixed;
     top:0;
@@ -34,14 +31,13 @@ body{
 
 li{
     list-style: none;
-    padding: 20px;  /*This gives the space in between the elements in navbar i.e. Home, Project, Our Team etc.*/
+    padding: 20px;  
 }
 
 .push{
     margin-left: auto;
 }
 
-/*This is the anchor tag, it contains all the text orientations and styles etc inside the purple navbar box*/
 a{
     text-decoration: none;
     color: white; 
@@ -51,10 +47,8 @@ a{
     display: flex;
     font-size: 2rem;
     border-radius: 0px;
-    /*the following 2 commands is to bring the cover content to the center*/
-    
     justify-content:center;
-    height: 100%;   /*vw stands for viewport width, vh stands for viewport height. When we express in these terminologies/units, well be able to scroll thru the page but if we mention in pixels, its fixed and we cant scroll*/
+    height: 100%;   
 }
 
 .bgimg{
@@ -64,34 +58,37 @@ a{
 }
 
 .text{
-    top: 50%;  /* Vertically center the text */
-    left: 50%;  /* Horizontally center the text */
-    color:white;  /* Set text color to white for visibility */
-    font-size: 90px;  /* Adjust font size as needed */
+    top: 50%;  
+    left: 50%;  
+    color:white;  
+    font-size: 90px;  
     text-align:center;
     align-items: center; 
     font-style: oblique;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    animation: fadeIn 2s;
 }
 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 .grid-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuMnISGE-NtgqV5bQp8Spr-QZdKxpYvnY01Q&usqp=CAU);
-    
+    animation:fadeIn 5s;
 }
 
-/*this is for the navbar color*/
 .brown{
     background-color: rgba(165, 42, 42, 0.638);
 }
 
-/*this is for the prject grid boxes*/
 .pro1{
     background-color: purple;
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  
     margin: 20px;
     font-size: 4em;
     height:30vh;
@@ -103,8 +100,8 @@ a{
 
 .pro2{
     background-color: purple;
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  
     margin: 20px;
     font-size: 4em;
     height:30vh;
@@ -116,8 +113,8 @@ a{
 
 .pro3{
     background-color: purple;
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  /
     margin: 20px;
     font-size: 4em;
     height:30vh;
@@ -129,8 +126,8 @@ a{
 
 .pro4{
     background-color: purple;
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  
     margin: 20px;
     font-size: 4em;
     height:30vh;
@@ -142,8 +139,8 @@ a{
 
 .pro5{
     background-color:  rgba(165, 42, 42, 0.638);
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  
     margin: 20px;
     font-size: 20px;
     height:30vh;
@@ -151,8 +148,8 @@ a{
 
 .pro6{
     background-color:  rgba(165, 42, 42, 0.638);
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  /
     margin: 20px;
     font-size: 20px;
     height:30vh;
@@ -160,8 +157,8 @@ a{
 
 .pro7{
     background-color:  rgba(165, 42, 42, 0.638);
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  
     margin: 20px;
     font-size: 20px;
     height:30vh;
@@ -169,8 +166,8 @@ a{
 
 .pro8{
     background-color:  rgba(165, 42, 42, 0.638);
-    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
-    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    border-radius: 5px;  
+    padding: 80px;  
     margin: 20px;
     font-size: 20px;
     height:30vh;
@@ -180,7 +177,6 @@ address{
     text-decoration: underline;
 }
 
-/*This is for hover option over the project grids*/
 .pro1:hover {
     -webkit-transform:rotate(-7deg);
     -moz-transform:rotate(-7deg);
