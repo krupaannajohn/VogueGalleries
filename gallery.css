@@ -16,34 +16,11 @@ body{
     padding: 15px;
 }
 
-@media screen 
-  and (device-width: 480px) 
-  and (device-height: 800px){
-    .nav-bar{
-        font-size: 0.7em;
-        background-color: black; 
-    }
-    .cover{
-        font-size: 0.7em;
-    }
-    .grid-wrapper{
-        font-size: 0.7em;
-    }
-}
 
-@media screen 
-  and (min-device-width: 400px) 
-  and (max-device-width: 800px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media only screen and (max-width:600px){
     .nav-bar{
         font-size: 0.7em;
-        background-color: black; 
-    }
-    .cover{
-        font-size: 0.7em;
-    }
-    .grid-wrapper{
-        font-size: 0.7em;
+        background-color: black;
     }
 }
 
@@ -173,7 +150,7 @@ a{
 .pro6{
     background-color:  rgba(165, 42, 42, 0.638);
     border-radius: 5px;  
-    padding: 80px;  /
+    padding: 90px;  /
     margin: 20px;
     font-size: 20px;
     height:30vh;
