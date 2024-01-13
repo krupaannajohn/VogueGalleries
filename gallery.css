@@ -1,0 +1,247 @@
+.zone{
+    /*display: inline-block;*/  /*we commented this so that all the boxes will come one below the other and not as onle block in a line*/
+    padding:30px;
+    /*border-radius:15px;*/
+    color: white;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ 
+.nav-bar{
+    display: flex; 
+    margin: 0;
+    font-size: 1em;
+    padding: 15px;
+}
+
+@media only screen and (max-width:600px){
+    .nav-bar{
+        font-size: 0.7em;
+        background-color: black;  /*This makes the bg color change when we minimize the screen and it becomes less than 600px*/
+    }
+}
+
+/*This keeps our navbar in one place even when we scroll. This has been put with the nav class*/
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%
+}
+
+li{
+    list-style: none;
+    padding: 20px;  /*This gives the space in between the elements in navbar i.e. Home, Project, Our Team etc.*/
+}
+
+.push{
+    margin-left: auto;
+}
+
+/*This is the anchor tag, it contains all the text orientations and styles etc inside the purple navbar box*/
+a{
+    text-decoration: none;
+    color: white; 
+}
+
+.cover{
+    display: flex;
+    font-size: 2rem;
+    border-radius: 0px;
+    /*the following 2 commands is to bring the cover content to the center*/
+    
+    justify-content:center;
+    height: 100%;   /*vw stands for viewport width, vh stands for viewport height. When we express in these terminologies/units, well be able to scroll thru the page but if we mention in pixels, its fixed and we cant scroll*/
+}
+
+.bgimg{
+    background-image: url("https://img.freepik.com/free-photo/vibrant-colors-explode-messy-watercolor-blob-generated-by-ai_188544-9791.jpg");
+    background-size: cover; 
+    height:60vh;
+}
+
+.text{
+    top: 50%;  /* Vertically center the text */
+    left: 50%;  /* Horizontally center the text */
+    color:white;  /* Set text color to white for visibility */
+    font-size: 90px;  /* Adjust font size as needed */
+    text-align:center;
+    align-items: center; 
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuMnISGE-NtgqV5bQp8Spr-QZdKxpYvnY01Q&usqp=CAU);
+    
+}
+
+/*this is for the navbar color*/
+.brown{
+    background-color: rgba(165, 42, 42, 0.638);
+}
+
+/*this is for the prject grid boxes*/
+.pro1{
+    background-color: purple;
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 4em;
+    height:30vh;
+}
+
+.bgimg1{
+    background-image: url(data:image/jpeg;base64,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);
+}
+
+.pro2{
+    background-color: purple;
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 4em;
+    height:30vh;
+}
+
+.bgimg2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCNS0-ZMW44pufkKxWg-WtNMoCtkra_zqgw&usqp=CAU);
+}
+
+.pro3{
+    background-color: purple;
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 4em;
+    height:30vh;
+}
+
+.bgimg3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSDQBDPTrLTB9NADeNUyidH2JwnmIjiSRr-A&usqp=CAU);
+}
+
+.pro4{
+    background-color: purple;
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 4em;
+    height:30vh;
+}
+
+.bgimg4{
+    background-image: url(https://imgix.ranker.com/node_img/1669/33360731/original/pure-painting-artwork-photo-1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375);
+}
+
+.pro5{
+    background-color:  rgba(165, 42, 42, 0.638);
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 20px;
+    height:30vh;
+}
+
+.pro6{
+    background-color:  rgba(165, 42, 42, 0.638);
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 20px;
+    height:30vh;
+}
+
+.pro7{
+    background-color:  rgba(165, 42, 42, 0.638);
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 20px;
+    height:30vh;
+}
+
+.pro8{
+    background-color:  rgba(165, 42, 42, 0.638);
+    border-radius: 5px;  /*If we incease this, the project grid boxes become more circular*/
+    padding: 80px;  /*If we increase this, itll give a decent square like shape or some other shape*/
+    margin: 20px;
+    font-size: 20px;
+    height:30vh;
+}
+
+address{
+    text-decoration: underline;
+}
+
+/*This is for hover option over the project grids*/
+.pro1:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+.pro2:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+.pro3:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+.pro4:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+.pro5:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+.pro6:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+.pro7:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+.pro8:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+footer{
+    text-align: center;
+    border-radius: 0px;
+}
+
+.lightpurple{
+    background-color: rgba(165, 42, 42, 0.638);
+}
